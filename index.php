@@ -5,7 +5,7 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <h1>O Nas</h1>
+                    <h1>O nas</h1>
                     <div class="col-12">
                         <p class="about-txt">Firma POLNAR Damian Narożny istnieje i działa w branży
                             motoryzacyjnej od 1998 roku.Kupujemy i sprzedajemy samochody, ale również potrafimy
@@ -26,12 +26,12 @@
 
     <section>
         <div class="section">
-            <h1>Formularz kontaktowy</h1>
             <form action="<?php echo get_template_directory_uri(); ?>/form.php" enctype="multipart/form-data"
                 method="POST">
-                <div class="container">
+                <div class="container col-md-11 col-lg-9 col-xl-8 container-border">
+                    <h1>Formularz kontaktowy</h1>
                     <fieldset class="form-first">
-                        <div class="row col-lg-10 mx-auto">
+                        <div class="row col-lg-11 mx-auto">
                             <legend>Dane samochodu</legend>
                             <div class="form-group col-md-6">
                                 <label for="producent" class="col-form-label">Marka</label>
@@ -242,7 +242,7 @@
                     <div class="collapse" id="collapseExample">
 
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <legend>Wyposażenie</legend>
 
                                 <div class="row col-xl-10 mx-auto">
@@ -669,7 +669,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <legend>Historia auta</legend>
                                 <div class="form-group col-md-4">
                                     <label for="kraj_pochodzenia" class="col-form-label">Kraj pochodzenia</label>
@@ -817,7 +817,7 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <legend>Szczegóły transakcji</legend>
                                 <div class="form-group col-12 col-md-7">
                                     <label for="forma_sprzedazy" class="col-form-label">Froma sprzedaży</label>
@@ -871,7 +871,7 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <legend>Dane Kontaktowe</legend>
 
                                 <div class="form-group col-md-6">
@@ -904,7 +904,7 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <legend>Zdjęcia samochodu</legend>
                                 <div class="form-group col-md-6">
                                     <label class="col-form-label" for="zewnetrzne_1">Zewnętrzne 1</label>
@@ -953,7 +953,7 @@
 
                         </fieldset>
                         <fieldset>
-                            <div class="row col-lg-10 mx-auto">
+                            <div class="row col-lg-11 mx-auto">
                                 <div class="form-group col-12">
                                     <label for="dodatkowe_informacje" class="col-form-label">Dodatkowe informacje, które
                                         uznasz za ważne dla wyceny auta</label>
@@ -963,7 +963,7 @@
                             </div>
                             <div class="row col-lg-10 mx-auto">
                                 <div class="captcha_wrapper">
-                                    <div class="g-recaptcha" data-sitekey="6LfNWusZAAAAAF0BIOIaI8Luzecn9LREuGEGA-f9">
+                                    <div class="g-recaptcha" data-sitekey="6LcQ1GEaAAAAAJUravWTFjmVXSmvpyZzjnxtOdiI">
                                     </div>
                                 </div>
                             </div>
@@ -972,123 +972,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="invalidCheck" required>
                                         <label class="form-check-label" for="invalidCheck">
-                                            Wyrażam zgode na przetwarzanie moich danych osobowych zgodnie z
-                                            <a data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                                                aria-expanded="false" aria-controls="multiCollapseExample1">
-                                                <span class="klauzula-pink">Informacją o polityce prywatności</span>
-                                            </a>
-                                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                                <div class="rodo">
-                                                    <p>INFORMACJA O POLITYCE PRYWATNOŚCI</p>
-                                                    <p>CEL I SPOSÓB PRZETWARZANIA DANYCH OSOBOWYCH</p>
-                                                    <p>Przekazane przez Państwa dane osobowe („Dane”) będą przetwarzane
-                                                        w następujących celach:
-                                                        a) świadczenie usługi („Usługa”) wskazanej w umowie, którą
-                                                        zawarli Państwo ze spółką FCA Italy S.p.A. („Spółka”);
-                                                        b) umożliwienie Spółce przeprowadzania badań poziomu zadowolenia
-                                                        klientów („Badania Satysfakcji Klienta”) dotyczących jakości
-                                                        towarów i usług oferowanych przez Spółkę i umożliwiających
-                                                        realizację uzasadnionych interesów Spółki;
-                                                        c) po uzyskaniu wyraźnej zgody klienta - przesyłanie informacji
-                                                        handlowych oraz reklam produktów i usług oferowanych przez
-                                                        Spółkę bądź prowadzenie badań rynku („Działania Marketingowe”);
-                                                        d) po uzyskaniu wyraźnej zgody klienta - analiza zachowań i
-                                                        nawyków klienta oraz skłonności do zakupu na potrzeby
-                                                        doskonalenia produktów i usług oferowanych przez Spółkę, a także
-                                                        z myślą o spełnieniu oczekiwań klienta („Profilowanie”);
-                                                        e) po uzyskaniu wyraźnej zgody klienta - przekazywanie Danych
-                                                        spółkom zależnym Spółki i podmiotom z nią powiązanym (a także
-                                                        ich partnerom w sektorze motoryzacyjnym, finansowym,
-                                                        ubezpieczeniowym i telekomunikacyjnym), które będą przetwarzać
-                                                        Dane w celach przesyłania informacji handlowych oraz reklam
-                                                        swoich produktów lub usług bądź prowadzenia badań rynku
-                                                        („Działania Marketingowe prowadzone przez stronę trzecią”).
-                                                        Dane mogą być przetwarzane w formie papierowej, elektronicznej
-                                                        lub w sposób zautomatyzowany, między innymi za pośrednictwem
-                                                        tradycyjnej poczty, poczty elektronicznej bądź telefonicznie
-                                                        (np. poprzez automatyczne połączenia telefoniczne, wiadomości
-                                                        SMS, MMS), faksem bądź w inny sposób (np. strony internetowe,
-                                                        aplikacje mobilne).</p>
-                                                    <p>KONSEKWENCJE NIEPRZEKAZANIA DANYCH</p>
-                                                    <p>Przekazanie Danych nigdy nie jest obowiązkowe. Jednakże
-                                                        nieudostępnienie Danych oznaczonych jako wymagane uniemożliwi
-                                                        Spółce świadczenie Usługi. Z kolei nieprzekazanie Danych
-                                                        opcjonalnych nie będzie miało wpływu na możliwość korzystania z
-                                                        Usługi.</p>
-                                                    <p>ODBIORCY DANYCH</p>
-                                                    <p>Dane mogą być przetwarzane przez osoby fizyczne i/lub prawne
-                                                        działające w imieniu Spółki (zgodnie ze szczególnymi
-                                                        zobowiązaniami umownymi) i mające siedzibę w państwach
-                                                        członkowskich UE bądź w krajach spoza UE.
-                                                        Dane mogą być udostępniane stronom trzecim w celu wypełnienia
-                                                        obowiązków wynikających z prawa, wykonania nakazu władz
-                                                        publicznych lub skorzystania z przysługujących Spółce praw przed
-                                                        organem sądowym.</p>
-                                                    <p>PRZEKAZYWANIE DANYCH POZA EOG</p>
-                                                    <p>W ramach stosunków umownych Spółka może przesyłać Dane do krajów
-                                                        poza Europejskim Obszarem Gospodarczym (EOG), a także
-                                                        przechowywać je w bazach danych zarządzanych przez podmioty
-                                                        działające w imieniu Spółki. Zarządzanie bazami danych oraz
-                                                        przetwarzanie Danych może służyć wyłącznie wskazanym powyżej
-                                                        celom przetwarzania i musi odbywać się zgodnie z obowiązującym
-                                                        prawem o ochronie danych.
-                                                        W przypadku przesyłania Danych poza EOG Spółka zastosuje
-                                                        wszelkie odpowiednie środki umowne w celu zagwarantowania
-                                                        właściwej ochrony Danych. Jednym z tego rodzaju środków jest
-                                                        zawieranie umów zawierających standardowe klauzule umowne
-                                                        przyjęte przez Komisję Europejską na potrzeby przekazywania
-                                                        danych osobowych poza EOG.</p>
-                                                    <p> ADMINISTRATOR DANYCH I ZESPÓŁ INSPEKTORA OCHRONY DANYCH</p>
-                                                    <p>Administratorem danych jest FCA Italy S.p.A. z siedzibą w Corso
-                                                        Giovanni Agnelli 200 – 10135 Turyn, Włochy.
-                                                        Z zespołem inspektora ochrony danych można skontaktować się,
-                                                        pisząc na adres dpo@fcagroup.com.</p>
-                                                    <p>PRZECHOWYWANIE DANYCH</p>
-                                                    <p> Dane przetwarzane na potrzeby świadczenia Usługi oraz
-                                                        przeprowadzania Badań Satysfakcji Klienta będą przechowywane
-                                                        przez Spółkę przez okres uznany za ściśle niezbędny do
-                                                        realizacji takich celów. W przypadku Danych przetwarzanych na
-                                                        potrzeby realizacji Usługi Spółka może przechowywać Dane przez
-                                                        dłuższy okres, który zostanie uznany za konieczny dla ochrony
-                                                        interesów Spółki w związku z ewentualną odpowiedzialnością
-                                                        związaną ze świadczeniem Usługi.</p>
-                                                    <p>Dane przetwarzane w celu prowadzenia Działań Marketingowych oraz
-                                                        Profilowania będą przechowywane przez Spółkę od chwili wyrażenia
-                                                        zgody przez klienta do momentu wycofania zgody. Po wycofaniu
-                                                        zgody Dane nie będą już wykorzystywane do tych celów, choć mogą
-                                                        być wciąż przechowywane przez Spółkę, w szczególności na
-                                                        potrzeby ochrony interesów Spółki w związku z ewentualną
-                                                        odpowiedzialnością za przetwarzanie, chyba że właściwy organ
-                                                        nadzoru udzieli dodatkowych wyjaśnień dotyczących tej kwestii.
-                                                    </p>
-                                                    <p>PRAWA KLIENTA</p>
-                                                    <p>Klientowi przysługują następujące prawa:
-                                                        1. prawo dostępu oznacza przysługujące klientowi prawo do
-                                                        uzyskania od Spółki informacji, czy jego Dane są przetwarzane, a
-                                                        także - w odpowiednich przypadkach - prawo uzyskania dostępu do
-                                                        tych Danych;
-                                                        2. prawo do sprostowania i prawo do usunięcia danych oznacza
-                                                        prawo do poprawienia nieprawidłowych i/lub niekompletnych
-                                                        Danych, a także usunięcia Danych, gdy takie żądanie jest
-                                                        uzasadnione;
-                                                        3. prawo do ograniczenia przetwarzania oznacza prawo do złożenia
-                                                        wniosku o wstrzymanie przetwarzania (w uzasadnionych
-                                                        przypadkach);
-                                                        4. prawo do przenoszenia danych oznacza prawo do uzyskania
-                                                        Danych w zorganizowanym, powszechnie stosowanym formacie
-                                                        umożliwiającym odczyt, a także prawo do przenoszenia Danych do
-                                                        innych administratorów;
-                                                        5. prawo do sprzeciwu oznacza prawo do sprzeciwienia się
-                                                        przetwarzaniu Danych z uzasadnionych powodów; dotyczy to również
-                                                        przetwarzania Danych w celu prowadzenia Działań Marketingowych
-                                                        lub Profilowania (w odpowiednich przypadkach);
-                                                        6. prawo do złożenia skargi organowi nadzorczemu w przypadku
-                                                        przetwarzania Danych w sposób niezgodny z prawem.
-                                                        Klienci mogą skorzystać z powyższych praw, pisząc na adres FCA
-                                                        Italy S.p.A., Corso Giovanni Agnelli 200 – 10135 Turyn, Włochy
-                                                        lub na adres e-mail privacy@fcagroup.com.</p>
-                                                </div>
-                                            </div>
+                                            <p class="form-check-label-privacy">Wyrażam zgode na przetwarzanie moich danych osobowych zgodnie z <a href="<?php echo home_url('/polityka-prywatnosci',''); ?>" target="_blank">polityka prywatności</a>.</p>
                                         </label>
                                         <div class="invalid-feedback">
                                             Musisz wyrazić zgodę przed zatwierdzeniem
@@ -1199,7 +1083,7 @@
                                     <div class="col-12">
                                         <div class="row justify-content-between">
                                             <h2 class="car-name"><?php the_title();?></h2>
-                                            <div class="car-price"><?php the_field('cena_samochodu'); ?></div>
+                                            <div class="car-price"><?php the_field('cena_samochodu'); ?> <span class="car-sold"><?php the_field('sprzedanerezerwacja'); ?></span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1336,8 +1220,9 @@
                                             <div class="article-text"><?php the_excerpt_max_charlength(200); ?></div>
                                         </div>
                                         <div class="text-center">
-                                            <button class="inside"><a
-                                                    href="<?php the_permalink(); ?>">Szczegóły</a></button>
+                                            <button class="inside btn-alt">
+                                                <a href="<?php the_permalink(); ?>">Szczegóły</a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -1351,7 +1236,7 @@
             <h4>Nie ma żadnych postów</h4>
             <?php endif; ?>
             <div class="container text-center">
-                <button>
+                <button class="btn-big btn-alt">
                     <a class="link-scroll" href="<?php echo home_url('/cars',''); ?>">Oferty archiwalne</a>
                 </button>
                 <div id="wspolpraca"></div>
@@ -1368,7 +1253,7 @@
                     <div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel" data-pause="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="2000">
-                                <div class="cooperation-text">SANTANDER BANK</div>
+                                <div class="cooperation-text">SCB</div>
                             </div>
                             <div class="carousel-item" data-interval="2000">
                                 <div class="cooperation-text">EFL</div>
@@ -1433,8 +1318,8 @@
                         alt="...">
                     <p>Ta strona używa plików cookie w celu usprawnienia i ułatwienia dostępu do serwisu oraz
                         prowadzenia
-                        danych statystycznych. Dalsze korzystanie z tej witryny oznacza akceptację tego stanu rzeczy. <a
-                            href="<?php echo home_url('/polityka-cookies',''); ?>" target="_blank">polityka cookies</a>
+                        danych statystycznych. Dalsze korzystanie z tej witryny oznacza akceptację tego stanu rzeczy ( <a
+                            href="<?php echo home_url('/polityka-cookies',''); ?>" target="_blank">polityka cookies</a> ).
                     </p>
                     <button id="accept" class="inside">Rozumiem</button>
                 </div>

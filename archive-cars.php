@@ -5,8 +5,6 @@
     <section>
         <div class="section">
             <div class="container">
-                <h1>Oferty archiwalne</h1>
-
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
                     <?php 
                     if ( get_query_var('paged') ) {
@@ -45,15 +43,13 @@
                                 <div class="car-bar">
                                     <div class="col-12">
                                         <div class="row justify-content-between">
-                                            <h2 class="archive-car-name"><?php the_title();?></h2>
+                                        <a class="car-bar" href="<?php the_permalink(); ?>/#oferta"><h2 class="archive-car-name"><?php the_title();?></h2></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <img src="<?php the_field('zdjecie_1'); ?>" class="image-style" alt="...">
-                                <div class="text-center">
-                                    <button class="inside"><a
-                                            href="<?php the_permalink(); ?>/#oferta">Szczegóły</a></button>
-                                </div>
+                                <a href="<?php the_permalink(); ?>/#oferta"><img src="<?php the_field('zdjecie_1'); ?>" class="image-style" alt="..."></a>
+                                
                             </div>
                         </div>
                     </article>

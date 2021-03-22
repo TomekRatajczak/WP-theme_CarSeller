@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="<?php bloginfo('charset') ?>">
-    <?php if(is_search()) :?>
+    <?php if (is_search()) : ?>
     <meta name="robots" content="noindex, nofollw">
-    <?php endif;?>
+    <?php endif; ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>dreamAUTO.pl</title>
@@ -25,12 +25,14 @@
 <body>
     <header id="home">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-            <div class="logo-alt d-block d-md-none">
-                <a class="link-scroll nav-link" href="#home">
-                    <div class="logo-alt-txt-big">POLNAR <span class="logo-alt-txt-small"> Damian Narożny</span></div>
-                </a>
-            </div>
-            <button class="navbar-toggler ml-auto button-nav" type="button" data-toggle="collapse"
+            <a class="link-scroll nav-link d-none d-md-block" href="#home">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo" alt="...">
+            </a>
+            <a class="link-scroll nav-link d-block d-md-none" href="#home">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo-sm" alt="...">
+            </a>
+
+            <button class="navbar-toggler ml-auto button-nav text-white" type="button" data-toggle="collapse"
                 data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false"
                 aria-label="Przełącznik aplikacji">
                 <span class="navbar-toggler-icon"></span>
@@ -49,10 +51,10 @@
                         <a class="link-scroll nav-link header-link" href="#sprzedaz">Oferta samochodów</a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="link-scroll nav-link header-link" href="#wspolpraca">Nasi partnerzy</a>
-                    </li>
-                    <li class="nav-item ml-auto">
                         <a class="link-scroll nav-link header-link" href="#kontakt">Kontakt</a>
+                    </li>
+                    <li class="nav-item ml-auto ml-lg-3 mt-2 mt-lg-0 header-link-alt">
+                        <a class="link-scroll nav-link" href="#formularz">Sprzedaj auto</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +62,7 @@
 
 
         <div class="hero-section">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-pause="false">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-pause="false">
                 <ol class="carousel-indicators dolne">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -71,7 +73,8 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/auto-steering-wheel-light-switch-control-paddle.jpg"
                             class="hero-section-img" alt="...">
                         <div class="col-11 col-md-8 col-lg-6 carousel-caption text-left">
-                            <h2 class="hero-text-header">PROFESJONANY SKUP SAMOCHODÓW</h2>
+                            <h2 class="hero-text-header">PROFESJONANY SKUP SAMOCHODÓW<span class="r"> &#8718;</span>
+                            </h2>
                             <div class="col-12 bg-dark single-hero-text-opacity">
                                 <p class="hero-text">Odkupujemy samochody w trwającym leasingu lub kredycie! Załatwimy
                                     zaCiebie formalności z bankiem lub firmą leasingową. Spłacimy Twoją umowę i
@@ -87,7 +90,8 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/front-car-lights-night-road.jpg"
                             class="hero-section-img" alt="...">
                         <div class="col-11 col-md-8 col-lg-6 carousel-caption text-left">
-                            <h2 class="hero-text-header">POZBADZ SIE ODPOWIEDZIALNOŚCI</h2>
+                            <h2 class="hero-text-header">POZBADZ SIE ODPOWIEDZIALNOŚCI<span class="r"> &#8718;</span>
+                            </h2>
                             <div class="col-12 bg-dark single-hero-text-opacity">
                                 <p class="hero-text"> Odkupujemy samochody w trwającym leasingu lub kredycie! Załatwimy
                                     zaCiebie formalności z bankiem lub firmą leasingową. Spłacimy Twoją umowę i
@@ -103,7 +107,8 @@
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/smooth-material-close-up-view-of-interior-of-brand-new-modern-luxury-automobile.jpg"
                             class="hero-section-img" alt="...">
                         <div class="col-11 col-md-8 col-lg-6 carousel-caption text-left">
-                            <h2 class="hero-text-header">SPŁACIMY TWÓJ LEASING LUB KREDYT</h2>
+                            <h2 class="hero-text-header">SPŁACIMY TWÓJ LEASING LUB KREDYT<span class="r"> &#8718;</span>
+                            </h2>
                             <div class="col-12 bg-dark single-hero-text-opacity">
                                 <p class="hero-text">Odkupujemy samochody w trwającym leasingu lub kredycie! Załatwimy
                                     zaCiebie formalności z bankiem lub firmą leasingową. Spłacimy Twoją umowę i
@@ -132,5 +137,5 @@
                 </a>
             </li>
         </div>
-
+        <div id="onas"></div>
     </header>

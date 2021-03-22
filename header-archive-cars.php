@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html <?php language_attributes();?>>
+<html <?php language_attributes(); ?>>
 
 <head>
     <meta charset="<?php bloginfo('charset') ?>">
-    <?php if(is_search()) :?>
+    <?php if (is_search()) : ?>
     <meta name="robots" content="noindex, nofollw">
-    <?php endif;?>
+    <?php endif; ?>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>dreamAUTO.pl</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -23,61 +23,56 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-            <div class="logo-alt d-block d-md-none">
-                <a class="link-scroll nav-link" href="<?php echo home_url('/#home',''); ?>">
-                    <div class="logo-alt-txt-big">POLNAR <span class="logo-alt-txt-small"> Damian Narożny</span></div>
-                </a>
-            </div>
+            <a class="nav-link link-scroll d-none d-md-block" href="<?php echo home_url('/#home', ''); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo" alt="...">
+            </a>
+            <a class="link-scroll nav-link d-block d-md-none" href="<?php echo home_url('/#home', ''); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo-sm" alt="...">
+            </a>
+
             <button class="navbar-toggler ml-auto button-nav" type="button" data-toggle="collapse"
                 data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false"
                 aria-label="Przełącznik aplikacji">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="nav-link link-scroll d-none d-md-block" href="<?php echo home_url('/#home',''); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo" alt="...">
-            </a>
-
             <div class="collapse navbar-collapse" id="mainmenu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-auto">
-                        <a class="link-scroll nav-link header-link" href="<?php echo home_url('/#skup',''); ?>">Skup
+                        <a class="link-scroll nav-link header-link" href="<?php echo home_url('/#skup', ''); ?>">Skup
                             samochodów</a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="link-scroll nav-link header-link"
-                            href="<?php echo home_url('/#sprzedaz',''); ?>">Oferta samochodów</a>
+                            href="<?php echo home_url('/#sprzedaz', ''); ?>">Oferta samochodów</a>
                     </li>
                     <li class="nav-item ml-auto">
                         <a class="link-scroll nav-link header-link"
-                            href="<?php echo home_url('/#wspolpraca',''); ?>">Nasi partnerzy</a>
+                            href="<?php echo home_url('/#kontakt', ''); ?>">Kontakt</a>
                     </li>
-                    <li class="nav-item ml-auto">
-                        <a class="link-scroll nav-link header-link"
-                            href="<?php echo home_url('/#kontakt',''); ?>">Kontakt</a>
+                    <li class="nav-item ml-auto ml-lg-3 mt-2 mt-lg-0 header-link-alt">
+                        <a class="link-scroll nav-link" href="<?php echo home_url('/#formularz', ''); ?>">Sprzedaj auto</a>
                     </li>
                 </ul>
             </div>
 
         </nav>
-    <section>
-        <div class="alternative-hero-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/auto-business-car-sale-consumerism-people-concept.jpg"
-                class="alternative-hero-image" alt="...">
-            <div class="col-10 col-md-6 carousel-caption text-left single-hero-text">
-                <h2 class="hero-text-header">SPŁACIMY TWÓJ LEASING LUB KREDYT</h2>
-                <div class="col-12 bg-dark single-hero-text-opacity">
-                    <p class="hero-text">Odkupujemy samochody w trwającym leasingu lub kredycie! Załatwimy
-                        zaCiebie formalności z bankiem lub firmą leasingową. Spłacimy Twoją umowę i
-                        zapłacimy Ci za samochód.
-                    </p>
-                    <button class="btn">
-                        <a class="link-scroll" href="#kontakt">Kontakt</a>
-                    </button>
+
+
+        <div class="hero-section">
+            <div class="carousel slide">
+                <div class="carousel-inner">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/brand-new-cars-sale.jpg"
+                        class="hero-section-img" alt="...">
+                    <div class="col-md-10 carousel-caption text-left single-hero-text">
+                        <h2 class="d-none d-md-block single-hero-text-header">Oferty archiwalne<span
+                                class="r">&#8718;</span></h2>
+                        <h2 class="d-block d-md-none single-hero-text-header-sm">Oferty archiwalne<span
+                                class="r">&#8718;</span></h2>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="oferta"></div>
-    </section>
+
 
     </header>

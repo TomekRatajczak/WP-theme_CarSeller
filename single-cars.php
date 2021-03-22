@@ -5,7 +5,7 @@
 <main>
     <section>
         <div class="section">
-            <h1>Oferta samochodu</h1>
+            <h1>Opis samochodu</h1>
             <div class="container">
                 <div class="row d-flex flex-wrap-reverse">
                     <div class="col-12 col-md-7">
@@ -72,13 +72,13 @@
                     </div>
                     <div class="col-12 col-md-5 text-left">
                         <div class="article-text new-bg">
-                            <h2 class="single-car-big"><?php the_title();?></h2>
-                            <h3 class="single-car-mid"><?php the_field('cena_samochodu'); ?></h3>
+                            <h2 class="single-car-big"><?php the_title(); ?></h2>
+                            <span class="single-car-sold"><?php the_field('sprzedanerezerwacja'); ?></span>
+                            <h3 class="single-car-mid"><?php the_field('cena_samochodu'); ?> </h3>
                             <div class="d-block d-md-none">
                                 <img src="<?php the_field('zdjecie_1'); ?>" id="small-1" class="img-small image-script"
                                     alt="...">
                             </div>
-                            <div class="article-text-guaranty"></div>
 
                             <div class="single-car-small-bold">Rocznik:
                                 <span class="single-car-small"><?php the_field('rok_produkcji'); ?></span>
@@ -96,27 +96,33 @@
 
                             <div class="single-car-small"><?php the_field('opis_samochodu'); ?></div>
 
-                            <h3 class="single-car-mid">Silnik i napęd</h3>
-                            <div class="single-car-small-bold">Rodzaj silnika:
+                            <h3 class="single-car-mid"><?php the_field('silnik_i_naped_box'); ?></h3>
+                            <div class="single-car-small-bold"><?php the_field('rodzaj_silnika_box'); ?>
                                 <span class="single-car-small"><?php the_field('rodzaj_silnika'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">Moc:
+                            <div class="single-car-small-bold"><?php the_field('moc_silnika_box'); ?>
                                 <span class="single-car-small"><?php the_field('moc_silnika'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">Momęt obrotowy:
+                            <div class="single-car-small-bold"><?php the_field('momet_obrotowy_box'); ?>
                                 <span class="single-car-small"><?php the_field('momet_obrotowy'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">Skrzynia biegów:
+                            <div class="single-car-small-bold"><?php the_field('skrzynia_biegow_box'); ?>
                                 <span class="single-car-small"><?php the_field('szkrzynia_biegow'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">V max:
+                            <div class="single-car-small-bold"><?php the_field('predkosc_maksymalna_box'); ?>
                                 <span class="single-car-small"><?php the_field('predkosc_maksymalna'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">0-100km/h:
+                            <div class="single-car-small-bold"><?php the_field('przyspieszenie_box'); ?>
                                 <span class="single-car-small"><?php the_field('przyspieszenie'); ?></span>
                             </div>
-                            <div class="single-car-small-bold">Zużycie paliwa(w cyklu mieszanym):
+                            <div class="single-car-small-bold"><?php the_field('zuzycie_paliwa_box'); ?>
                                 <span class="single-car-small"><?php the_field('zuzycie_paliwa'); ?></span>
+                            </div>
+                            <div class="single-car-small-bold"><?php the_field('naped_box'); ?>
+                                <span class="single-car-small"><?php the_field('naped'); ?></span>
+                            </div>
+                            <div class="single-car-small-bold"><?php the_field('zawieszenie_box'); ?>
+                                <span class="single-car-small"><?php the_field('zawieszenie'); ?></span>
                             </div>
                             <h3 class="single-car-mid d-block d-md-none">Galeria zdjęć</h3>
                         </div>
@@ -124,25 +130,26 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-12 col-md-7">
-                        <h3 class="single-car-mid">Wyposażenie</h3>
-                        <span class="single-car-item">
-                            <?php printCarelementsCategories($post->ID); ?>
-                        </span>
-                        <?php the_content(); ?>
-                    </div>
-                    <div class="col-12 col-md-5 text-left">
-                        <h3 class="single-car-mid">Wyposażenie dodatkowe</h3>
-                        <div class="single-car-small-bold"><?php the_field('wyposazenie_dodatkowe'); ?>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7">
+                            <h3 class="single-car-mid">Wyposażenie</h3>
+                            <span class="single-car-item">
+                                <?php printCarelementsCategories($post->ID); ?>
+                            </span>
+                            <?php the_content(); ?>
                         </div>
+                        <div class="col-12 col-md-5 text-left">
+                            <h3 class="single-car-mid"><?php the_field('wyposazenie_dodatkowe_box'); ?></h3>
+                            <div class="single-car-small-bold"><?php the_field('wyposazenie_dodatkowe'); ?></div>
 
-                        <h3 class="single-car-mid"><?php the_field('dodatowe_informacje_box'); ?></h3>
-                        <div class="single-car-small-bold"><?php the_field('dodatkowe-informacje'); ?></div>
+                            <h3 class="single-car-mid"><?php the_field('dodatowe_informacje_box'); ?></h3>
+                            <div class="single-car-small-bold"><?php the_field('dodatkowe-informacje'); ?></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="ofertacenowa"></div>
     </section>
 
     <section>
@@ -151,14 +158,15 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-10">
                         <div class="single-car-small-light">Twoje auto:</div>
-                        <h2 class="single-car-big-light"><?php the_title();?></h2>
+                        <h2 class="single-car-big-light"><?php the_title(); ?></h2>
                         <br />
                         <div class="single-car-small-light">Cena:</div>
                         <h3 class="single-car-mid-light"><?php the_field('cena_samochodu'); ?></h3>
                         <br />
                         <div class="single-car-small-light">Koszt miesięczny:</div>
                         <h3 class="single-car-mid-light">od <?php the_field('koszt_miesieczny'); ?><span
-                                class="single-car-small-light"> Całkowity koszt leasingu: </span> 110%</h3>
+                                class="single-car-small-light"> Całkowity koszt <?php the_field('finansowanie'); ?>:
+                            </span> <?php the_field('procent'); ?>*</h3>
                     </div>
                 </div>
             </div>

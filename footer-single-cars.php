@@ -32,7 +32,7 @@
                                     samochodów</a></li>
                             <li><a class="link-scroll" href="<?php echo home_url('/#formularz',''); ?>">Formularz
                                     kontaktowy</a></li>
-                            <li><a class="link-scroll" href="<?php echo home_url('/#sprzedarz',''); ?>">Sprzedaż aut
+                            <li><a class="link-scroll" href="<?php echo home_url('/#sprzedaz',''); ?>">Sprzedaż aut
                                     używanych</a></li>
                             <li><a class="link-scroll" href="<?php echo home_url('/cars',''); ?>">Archiwum
                                     samochodów</a>
@@ -42,6 +42,10 @@
                             </li>
                             <li><a class="link-scroll" href="<?php echo home_url('/#kontakt',''); ?>">Kontakt z nami</a>
                             </li>
+                            <li><a class="link-scroll" href="<?php echo home_url('/polityka-prywatnosci',''); ?>"
+                                    target="_blank">Polityka prywatności</a></li>
+                            <li><a class="link-scroll" href="<?php echo home_url('/polityka-cookies',''); ?>"
+                                    target="_blank">Polityka cookies</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4 px-5">
@@ -50,7 +54,7 @@
                                     class="img-fluid" alt="..."></a></div>
                     </div>
                     <div class="col-12 border-top">
-                        <div class="klauzula">Informacje zaprezentowane na naszych stronach nie stanowią oferty w
+                        <div class="klauzula">*Informacje zaprezentowane na naszych stronach nie stanowią oferty w
                             rozumieniu
                             przepisów
                             Kodeksu Cywilnego. Szczegółowe warunki sprzedaży, opis i wyposażenie prezentowanych
@@ -74,77 +78,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.js"></script>
         <script src="<?php echo DREAMAUTO_THEME_URL ?>js/script.js"></script>
 
-
-        <script>
-$(window).scroll(function() {
-    $('.navbar').toggleClass('navbar-scroll', $(this).scrollTop() > 300);
-    $('.pink').toggleClass('pink-none', $(this).scrollTop() > 60);
-});
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
-
-window.onload = gallery;
-
-function gallery() {
-    const allimages = document.querySelectorAll(".image-script");
-    for (let i = 0; i < allimages.length; i++) {
-        if (allimages[i].id.indexOf("small") > -1) {
-            allimages[i].onclick = imgChanger;
-        }
-    }
-}
-
-function imgChanger() {
-    document.getElementById('big-image').src = this.src;
-}
-
-function toggleFullscreen(elem) {
-    elem = elem || document.documentElement;
-
-    if (!document.fullscreenElement && !document.mozFullScreenElement &&
-        !document.webkitFullscreenElement && !document.msFullscreenElement) {
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-        }
-    } else {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        }
-    }
-}
-let e = document.getElementById('big-image');
-document.getElementById('img-main-text').addEventListener('click', function() {
-    toggleFullscreen(e);
-});
-        </script>
         </body>
 
         </html>

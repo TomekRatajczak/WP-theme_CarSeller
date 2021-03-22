@@ -70,7 +70,7 @@
 </head>
 
 <body>
-    <img src="https://tomekratajczak.pl/wp-content/themes/dreamauto/img/front-car-lights-night-road.jpg">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/front-car-lights-night-road.jpg" class="hero-section-img" alt="...">
     <div class="container">
 
 <?php
@@ -78,7 +78,7 @@ $response = $_POST["g-recaptcha-response"];
 
 $url = 'https://www.google.com/recaptcha/api/siteverify';
 $data = array(
-	'secret' => '6LfNWusZAAAAAMhkxAjyJttBRIVCWKXfLgtqE5KG',
+	'secret' => '6LcQ1GEaAAAAAIFyExYIPwIIX6dlt3c2x8QZty-5',
 	'response' => $_POST["g-recaptcha-response"]
 );
 $options = array(
@@ -376,7 +376,7 @@ $pozostala_kwota = $_POST['pozostala_kwota'];
 			</div>
 
 			<img class="hero-image"
-				src="https://tomekratajczak.pl/wp-content/themes/dreamauto/img/smooth-material-close-up-view-of-interior-of-brand-new-modern-luxury-automobile.jpg">
+				src="http://www.designbytr.pl/wp-content/themes/dreamauto/img/smooth-material-close-up-view-of-interior-of-brand-new-modern-luxury-automobile.jpg">
 
 			<div class="content">
 				<div class="content-header">
@@ -514,10 +514,10 @@ $pozostala_kwota = $_POST['pozostala_kwota'];
 					</div>
 				</div>
 				<div class="images">
-					<a href="https://tomekratajczak.pl" target="_blank" style="margin-right: 20px;"><img
-							src="https://tomekratajczak.pl/wp-content/themes/dreamauto/img/logo.png" class="image"></a>
+					<a href="http://www.designbytr.pl/" target="_blank" style="margin-right: 20px;"><img
+							src="http://www.designbytr.pl/wp-content/themes/dreamauto/img/logo.png" class="image"></a>
 					<a href="https://wizytowka.rzetelnafirma.pl/30VF6F0Z/1" target="_blank"><img
-							src="https://tomekratajczak.pl/wp-content/themes/dreamauto/img/baner_03.jpg" class="image"></a>
+							src="http://www.designbytr.pl/wp-content/themes/dreamauto/img/baner_03.jpg" class="image"></a>
 				</div>
 				<p>Wiadomość wygenerowana automatyznie z serwisu polnar.pl - Prosimy
 					na nią nie odpowiadać</p>
